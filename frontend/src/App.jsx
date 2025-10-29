@@ -12,6 +12,8 @@ import Cart from "./pages/Cart";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import FAQ from "./pages/FAQ";
+import Roblox from "./pages/Roblox";
+import BloxFruits from "./pages/BloxFruits";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -32,6 +34,10 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/faq" element={<FAQ />} />
+          <Routes>
+  <Route path="/roblox" element={<Roblox />} />
+  <Route path="/blox-fruits" element={<BloxFruits />} />
+</Routes>
         </Routes>
       </div>
     </Router>
